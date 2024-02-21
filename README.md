@@ -1,2 +1,11 @@
 # valorant-skin-database
-prototipo web - dev mobile
+
+## tarefas 
+-[] Header
+-[] Apresentação
+-[] Pistolas
+-[] SMGs
+-[] Espingardas
+-[] Rifles
+-[] Snipers
+-[] Facas
