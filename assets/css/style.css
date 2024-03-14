@@ -50,6 +50,7 @@ h2, a{
     font-family: "Lexend Deca", sans-serif;
     font-size: 5rem;
     margin-bottom: 0.5rem;
+    -webkit-text-stroke: 0.02em rgb(20, 19, 19)
 }
 #txt-apresentacao p{
     color: #9D0A2E;
@@ -58,6 +59,49 @@ h2, a{
     font-weight: 300;
     margin-top: 0.5rem;
 }
+
+#projetos{
+  height: 100vh;
+  background-color: #9D0A2E;
+  color: #E6E6E6;
+}
+
+#projetos ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height: 100%;
+  padding-left: 0%;
+  gap: 2em;
+}
+#projetos li{
+  list-style: none;
+}
+.card{
+  max-width: 420px; 
+  max-height: 320px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card .image {
+  height: 100%;
+  width: 100%;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+}
+.card .texto{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.card:hover .texto{
+  opacity: 1;
+}
+
 /* Style The Dropdown Button */
 .dropbtn {
     background-color: #9D0A2E;
@@ -69,6 +113,10 @@ h2, a{
     cursor: pointer;
   }
   
+.dropdown{
+  height: 62px;
+  width: 130px;
+}  
    /* The container <div> - needed to position the dropdown content */
   .dropdown-content {
     position: relative;
